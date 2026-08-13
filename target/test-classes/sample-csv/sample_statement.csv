@@ -1,0 +1,8 @@
+Date,Narration,Amount
+2026-07-01,SWIGGY*ORDER 88271,-450.00
+2026-07-01,SWIGGY*ORDER 91234,-450.00
+2026-07-02,UBER TRIP HELP.UBER.COM,-320.50
+2026-07-03,Salary Credit NEFT,50000.00
+2026-07-04,"Payment, ref weird desc",-75.00
+not-a-date,Broken Row,-10.00
+2026-07-05,Amazon Order,-1250.75

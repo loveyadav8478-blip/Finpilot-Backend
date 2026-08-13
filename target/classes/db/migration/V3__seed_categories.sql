@@ -1,0 +1,15 @@
+--INSERT INTO categories (code, display_name) VALUES
+--('FOOD', 'Food'),
+--('TRAVEL', 'Travel'),
+--('SHOPPING', 'Shopping'),
+--('ENTERTAINMENT', 'Entertainment'),
+--('UTILITIES', 'Utilities'),
+--('RENT', 'Rent'),
+--('HEALTHCARE', 'Healthcare'),
+--('GROCERIES', 'Groceries'),
+--('SUBSCRIPTIONS', 'Subscriptions'),
+--('EDUCATION', 'Education'),
+--('INVESTMENT', 'Investment'),
+--('TRANSFER', 'Transfer'),
+--('SALARY', 'Salary'),
+--('OTHER', 'Other');
