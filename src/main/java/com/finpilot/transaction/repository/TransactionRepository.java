@@ -32,5 +32,12 @@ public interface TransactionRepository extends JpaRepository<Transaction, UUID> 
     @Query("SELECT t FROM Transaction t WHERE t.userId = :userId AND t.categoryId IS NULL AND t.deleted = false")
     List<Transaction> findUncategorized(@Param("userId") UUID userId);
 
+    @Query("SELECT t.categoryId, SUM(t.amount) FROM Transaction t WHERE t.userId = :userId AND t.direction = com.finpilot.transaction.domain.TransactionEnums$Direction.DEBIT AND t.deleted = false AND t.transactionDate BETWEEN :startDate AND :endDate GROUP BY t.categoryId")
+    List<Object[]> sumDebitAmountsByUserIdAndCategoryAndDateRange(
+            @Param("userId") UUID userId,
+            @Param("startDate") LocalDate startDate,
+            @Param("endDate") LocalDate endDate);
+
     long countByUserIdAndDeletedFalse(UUID userId);
 }
+
